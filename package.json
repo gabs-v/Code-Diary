@@ -18,8 +18,12 @@
   },
   "homepage": "https://github.com/gabs-v/Code-Diary#readme",
   "dependencies": {
+    "browser": "^0.2.6",
     "express": "^4.18.1",
     "mongodb": "^4.8.1",
-    "mongoose": "^6.5.2"
+    "mongoose": "^6.5.2",
+    "route": "^0.2.5",
+    "router": "^1.3.7",
+    "routes": "^2.1.0"
   }
 }
