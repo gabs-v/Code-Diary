@@ -14,13 +14,14 @@ module.exports = {
         .catch((err) => console.log(err))
     },
 
-    getOneEntry: (req,res) => {
+    getOneEntry: (req, res) =>{
+        
         Entry.findOne({_id: req.params.id})
-        then((oneEntry) => {
-            console.log(oneEntry)
-            res.json(oneEntry)
-        })
-        .catch((err) => console.log(err))
+            .then((oneEntry) =>{
+                console.log(oneEntry);
+                res.json(oneEntry);
+            })
+            .catch((err) => console.log(err))
     },
 
     updateEntry: (req,res) => {
@@ -35,12 +36,12 @@ module.exports = {
             .catch((err) => console.log(err))
     },
 
-    deleteEntry: (res,req) => {
-        Entry.deleteOne({_id: req.params.id})
-        .then((deletedEntry) =>{
-            console.log(deletedEntry);
-            res.json(deletedEntry);
-        })
-        .catch((err)=> console.log(err))
+    deleteEntry:(req,res) =>{
+        Entry.deleteOne({ _id: req.params.id })
+            .then((deletedEntry)=>{
+                console.log(deletedEntry);
+                res.json(deletedEntry);
+            })
+            .catch((err)=> console.log(err))
     }
-}
+};
