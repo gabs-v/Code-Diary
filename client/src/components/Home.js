@@ -1,9 +1,18 @@
-import {Link, useNavigate} from "react-router-dom";
+import '../App.css'
 
 const Home = (props) => {
     return(
-        <div>
-            <h1>Code Diary</h1>
+        <div className="container">
+            <div className="navbar">
+                <h2>
+                    Code Diary
+                </h2>
+                <ul>
+                    <li>Home</li>
+                    <li>Create an Entry</li>
+                    <li>All Entrys</li>
+                </ul>
+            </div>
         </div>
     )
 }
